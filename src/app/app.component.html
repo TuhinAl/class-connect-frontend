@@ -1,7 +1,10 @@
 <header>
   <div class="header">
-    <span class="user-info">Logged in as: {{ userName }}</span>
-    <button (click)="logout()">Logout</button>
+    <a mat-button routerLink="/">Home</a>
+    <a mat-button routerLink="/login">Login</a>
+    <a mat-button routerLink="/registration">Register</a>
+    <!-- <span class="user-info">Logged in as: {{ userName }}</span> -->
+    <!-- <button (click)="logout()">Logout</button> -->
   </div>
 </header>
 
@@ -9,6 +12,7 @@
 
 <footer>
   <div class="footer">
-    <p>&copy; 2023 Coaching Center Management System. All rights reserved.</p>
+    <p>&copy; {{ currentYear }} Coaching Center Management System. All rights reserved.</p>
   </div>
 </footer>
+

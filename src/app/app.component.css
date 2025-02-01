@@ -1,1 +1,85 @@
-/* This file is intentionally left blank. */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Change this to your desired header background color */
+    color: white;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow for a subtle effect */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end; /* Aligns the buttons to the right */
+    align-items: center;
+    padding: 10px 20px; /* Add some padding for spacing */
+  }
+  
+  a[mat-button] {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px; /* Space between buttons */
+  }
+  
+  a[mat-button]:hover {
+    text-decoration: underline; /* Optional: underline text on hover */
+  }/* Make sure you apply this container around your main angular content */
+
+
+
+
+
+
+
+  
+  .user-info {
+    margin-right: 10px;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007BFF; /* adjust button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+
+
+.content {
+  flex: 1;
+  /* Acts as the main content area, can expand */
+}
+
+
+/* Make sure you apply this container around your main angular content */
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  .content {
+    flex: 1;
+    /* Acts as the main content area, can expand */
+  }
+  
+  footer {
+    background-color: #f1f1f1; /* Optional: change background color as needed */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
+  }
