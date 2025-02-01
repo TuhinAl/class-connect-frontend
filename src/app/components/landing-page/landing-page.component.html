@@ -1,28 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coaching Center Management</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.24/angular-material.min.css" rel="stylesheet">
-</head>
-<body>
-    <mat-toolbar color="primary">
-        <span>Coaching Center Management</span>
-        <span class="spacer"></span>
-        <a mat-button routerLink="/login">Login</a>
-        <a mat-button routerLink="/registration">Register</a>
-    </mat-toolbar>
 
-    <div class="landing-content">
-        <h1>Welcome to the Coaching Center</h1>
-        <p>Your journey to success starts here. Join us for the best coaching experience!</p>
-        <a mat-raised-button color="accent" routerLink="/registration">Get Started</a>
+<main>
+  <section id="landing">
+    <div  id="hero-section">
+    <div id="dark">
+      <div id="container">
+        <h1>Planet Earth Institute of Technology</h1>
+        </div>
     </div>
+    </div>
+  </section>
+  <section id="programs" class="container">
+    <h1>Programs we are offering in School</h1>
+    <div class="img-gallery-container">
+      <figure class="img-gallery">
+        <img src="https://i.ibb.co/7CKPGgT/business.jpg" alt="Business Image">
+        <figcaption class="desc">
+          <p>Business</p>
+        </figcaption>
+      </figure>
+      <figure class="img-gallery">
+        <img src="https://i.ibb.co/tBjnx6f/data-science.jpg" alt="Data Science Image">
+        <figcaption class="desc">
+          <p>Data Science</p>
+        </figcaption>
+      </figure>
+      <figure class="img-gallery">
+     <img src="https://i.ibb.co/hW4DyS5/computer-engineering.jpg" alt="Computer Engineering Image">
+        <figcaption class="desc">
+          <p>Computer Engineering</p>
+        </figcaption>
+      </figure>
+      <figure class="img-gallery">
+        <img src="https://i.ibb.co/HBM9MNV/bio.jpg" alt="Biological Science Image">
+        <figcaption class="desc">
+          <p>Biological Science</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="projects" class="container">
+    <h1>Projects</h1>
+    
+      <iframe id="video" width="972" height="547" src="https://www.youtube.com/embed/_luhn7TLfWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p> Source : MIT </p>
+    
+    </section>
+    <section id="contact" class="container">
+      <h1>Contact Us Now</h1>
+      <div>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Submit" class="btn" />
+    </form>
+      </div>
+    </section>
+</main>
 
-    <footer>
-        <p>&copy; 2023 Coaching Center. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+
