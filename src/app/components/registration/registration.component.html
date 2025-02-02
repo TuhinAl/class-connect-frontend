@@ -1,32 +1,58 @@
-<form class="registration-form">
-  <mat-card>
-    <mat-card-header>
-      <mat-card-title>Registration</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <form>
-        <mat-form-field appearance="fill">
-          <mat-label>Full Name</mat-label>
-          <input matInput placeholder="Enter your full name" required>
-        </mat-form-field>
+<div class="container">
+  <div class="title">
+      <p>Registration</p>
+  </div>
 
-        <mat-form-field appearance="fill">
-          <mat-label>Email</mat-label>
-          <input matInput type="email" placeholder="Enter your email" required>
-        </mat-form-field>
+  <form action="#">
+      <div class="user_details">
+          <div class="input_box">
+              <label for="name">First Name</label>
+              <input type="text" id="first_name" placeholder="Enter your firstname" required>
+          </div>
+          <div class="input_box">
+              <label for="username">Last Name</label>
+              <input type="text" id="last_name" placeholder="Enter your lastname" required>
+          </div>
+          <div class="input_box">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input_box">
+              <label for="phone">Phone Number</label>
+              <input type="number" id="phone" placeholder="Enter your number" required>
+          </div>
+          <div class="input_box">
+              <label for="pass">Password</label>
+              <input type="password" id="pass" placeholder="Enter your password" required>
+          </div>
+          <div class="input_box">
+              <label for="confirmPass">Confirm Password</label>
+              <input type="password" id="confirmPass" placeholder="Confirm your password" required>
+          </div>
+      </div>
+      <div class="gender">
+          <span class="gender_title">Gender</span>
+          <input type="radio" name="gender" id="radio_1">
+          <input type="radio" name="gender" id="radio_2">
+          <input type="radio" name="gender" id="radio_3">
 
-        <mat-form-field appearance="fill">
-          <mat-label>Password</mat-label>
-          <input matInput type="password" placeholder="Enter your password" required>
-        </mat-form-field>
-
-        <mat-form-field appearance="fill">
-          <mat-label>Confirm Password</mat-label>
-          <input matInput type="password" placeholder="Confirm your password" required>
-        </mat-form-field>
-
-        <button mat-raised-button color="primary" type="submit">Register</button>
-      </form>
-    </mat-card-content>
-  </mat-card>
-</form>
+          <div class="category">
+              <label for="radio_1">
+                  <span class="dot one"></span>
+                  <span>Male</span>
+              </label>
+              <label for="radio_2">
+                  <span class="dot two"></span>
+                  <span>Female</span>
+              </label>
+              <label for="radio_3">
+                  <span class="dot three"></span>
+                  <span>Prefer not to say</span>
+              </label>
+          </div>
+      </div>
+      <div class="reg_btn">
+          <input type="submit" value="Register">
+      </div>
+  </form>
+</div>
