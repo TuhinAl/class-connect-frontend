@@ -185,3 +185,28 @@ form .gender{
         flex-direction: column;
     }   
 }
+
+
+.parent-container {
+    text-align: center;
+  }
+  
+  .button {
+    background-color: #04AA6D;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block; /* Ensures margin auto works */
+  font-size: 16px;
+  padding: 10px 20px; /* Adjust padding for better button size */
+  margin: 15px auto;
+  border-radius: 5px; /* Optional: rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Optional: adds a smooth transition effect */
+  }
+
+  .button:hover {
+    background-color: #028a5e; /* Optional: slightly darker green for hover effect */
+  }
+  
